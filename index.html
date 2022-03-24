@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Website Developers Kenya. We develop websites, mobile applications and web hosting.">
+        <link rel="shortcut icon" href="assets/images/favicon.png">
+        
+        <title>Website Developers Kenya</title>
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/imagesfavicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        
+        <link href="assets/css/uikit.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/uikit-width-ex.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/ionicons.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/animations.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700%7CLora:400,400i%7CShadows+Into+Light:400" rel="stylesheet" />
+
+        <script src="/socket.io/socket.io.js"></script>
+        
+    </head>
+    <body class="loading"><div class="tw-preloader"><div data-uk-spinner></div></div><!-- .main-container close -->
+<div class="main-container"><section id="home" class="tw-slider tw-slider-fullscreen tw-slider-on-header uk-light" data-uk-height-viewport="offset-top: true">
+    <div class="owl-carousel owl-theme">
+        <div class="slider-item uk-background-cover" data-overlay="0.4" style="background-color: #151515; background-image: url(assets/images/slider/webslider2.jpg);"
+            data-uk-height-viewport="offset-top: true">
+            Photo by <a href="https://unsplash.com/@5halom_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shalom Mwenesi</a> on <a href="https://unsplash.com/s/photos/nairobi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            <div class="slider-content">
+                <div class="tw-element uk-text-center tw-heading full" data-uk-scrollspy="target: > *; cls:uk-animation-slide-bottom-medium; delay: 400;">
+                    <h4 class="tw-sub-title">
+                        
+                    </h4>
+                    <h1>
+                        We are your website development partners. 
+                    </h1>
+                    <p class="description">
+                        
+                    </p>
+                    <a href="#" class="uk-button uk-button-default uk-button-small uk-button-radius tw-hover">
+                        <span class="tw-hover-inner"><span>Get in Touch</span><i class="ion-ios-arrow-thin-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-container tw-header tw-header-transparent uk-light tw-header-bottom" data-uk-sticky="animation: uk-animation-slide-top">
+        <nav class="uk-navbar-container one-page-nav uk-flex-center" data-uk-navbar>
+
+            <div class="uk-navbar-left">
+                <div class="tw-logo">
+                    <h3 class="site-name">
+                        <a href="index.html"><img src="assets/images/logo.png"></img></a>
+                    </h3>
+                </div>
+            </div>
+            <div class="uk-navbar-center uk-visible@m">
+
+                <ul class="tw-main-menu">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#blog">Blog</a>
+                    </li> -->
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <div id="mobile-menu-modal" class="uk-modal-full" data-uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full" type="button" data-uk-close></button>
+            <div class="uk-light uk-height-viewport tw-mobile-modal uk-flex uk-flex-middle uk-flex-center" data-uk-scrollspy="target:>ul>li,>div>a; cls:uk-animation-slide-bottom-medium; delay: 150;">
+                <ul class="uk-nav-default uk-nav-parent-icon" data-uk-nav>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="tw-socials tw-socials-minimal">
+                    <a href="#"><i class="ion-social-facebook"></i></a>
+                    <a href="#"><i class="ion-social-twitter"></i></a>
+                    <a href="#"><i class="ion-social-pinterest"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section><section id="about" class="uk-section uk-section-large">
+    <div class="uk-container">
+
+        <div class="tw-element tw-heading uk-text-center">
+            <h3 class="tw-text-animate">The Story About us</h3>
+            <p data-uk-scrollspy="cls:uk-animation-slide-bottom-small; delay: 2000;">We design and develop services for customers of all sizes, specializing in creating stylish, modern websites,
+                web services and online stores.
+            </p>
+        </div>
+        <div class="uk-child-width-1-1 uk-child-width-1-3@m uk-margin-large-top" data-uk-grid data-uk-scrollspy="target: > div; cls:uk-animation-slide-top-medium; delay: 400;">
+            <div>
+                <div class="tw-element tw-box">
+                    <h4>
+                        Our Mission
+                    </h4>
+                    <p>
+                        Class aptent taciti sociosqu adero litora torquent perso conubia nostra perat mauris in erat justo nullam neque seder mauris
+                        egestas quam amet nibh. Vulputate cursus sitato amet mauris morbi accumsan ipsum velit name necrot
+                        tellus tincidunt ornare consequat auctor.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="tw-element tw-box">
+                    <h4>
+                        Our Vission
+                    </h4>
+                    <p>
+                        Class aptent taciti sociosqu adero litora torquent perso conubia nostra perat mauris in erat justo nullam neque seder mauris
+                        egestas quam amet nibh. Vulputate cursus sitato amet mauris morbi accumsan ipsum velit name necrot
+                        tellus tincidunt ornare consequat auctor.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="tw-element tw-box">
+                    <h4>
+                        Our Passion
+                    </h4>
+                    <p>
+                        Class aptent taciti sociosqu adero litora torquent perso conubia nostra perat mauris in erat justo nullam neque seder mauris
+                        egestas quam amet nibh. Vulputate cursus sitato amet mauris morbi accumsan ipsum velit name necrot
+                        tellus tincidunt ornare consequat auctor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="uk-section uk-light" style="background-color: #151515;">
+    <div class="uk-container">
+
+        <div class="uk-child-width-1-2 uk-child-width-expand@s" data-uk-grid data-uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 400;">
+            <div>
+                <div class="tw-element tw-counterup uk-text-center" data-slctr=">h1" data-txt="" data-sep="," data-dur="1000">
+                    <h1>7</h1>
+                    <span class="tw-meta">
+                        Year Experience
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div class="tw-element tw-counterup uk-text-center" data-slctr=">h1" data-txt="" data-sep="," data-dur="1000">
+                    <h1>30+</h1>
+                    <span class="tw-meta">
+                        Projects Done
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div class="tw-element tw-counterup uk-text-center" data-slctr=">h1" data-txt="" data-sep="," data-dur="1000">
+                    <h1>30+</h1>
+                    <span class="tw-meta">
+                        Happy Clients
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section><section id="services" class="uk-section">
+    <div class="uk-container">
+        <div class="tw-element tw-heading uk-text-center">
+            <h3>Our Services</h3>
+            <p>We design and develop services for customers of all sizes, specializing in creating stylish, modern websites,
+                web services and online stores.
+            </p>
+        </div>
+
+        <div class="tw-element uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid data-uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 300;">
+
+            <div>
+                <div class="tw-element tw-box layout-2 uk-padding">
+                    <i class="et-lightbulb"></i>
+                    <h4>
+                        Web Development
+                    </h4>
+                    <p class="description">
+                        Duis sed odio sit amet nibh vulputate cursus sit amet mauris morbi accumsan ipsum velit auctor ornare odio.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="tw-element tw-box layout-2 uk-padding">
+                    <i class="et-globe"></i>
+                    <h4>
+                        Web Hosting
+                    </h4>
+                    <p class="description">
+                        Duis sed odio sit amet nibh vulputate cursus sit amet mauris morbi accumsan ipsum velit auctor ornare odio.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="tw-element tw-box layout-2 uk-padding">
+                    <i class="et-strategy"></i>
+                    <h4>
+                        Mobile Applications
+                    </h4>
+                    <p class="description">
+                        Duis sed odio sit amet nibh vulputate cursus sit amet mauris morbi accumsan ipsum velit auctor ornare odio.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section><section class="uk-section uk-light" data-uk-parallax="bgy: -200" data-overlay="0.5" style="background-color: #151515; background-image: url(assets/images/slider/webslider1.jpg);">
+    <div class="uk-container">
+        <div class="tw-element tw-heading uk-text-center">
+            <h3>Our Process</h3>
+        </div>
+        <div class="tw-process uk-text-center tw-element uk-child-width-expand@l uk-child-width-1-2@s normal" data-uk-grid data-uk-scrollspy="target: > div; cls:uk-animation-slide-right-medium; delay: 300;">
+
+            <div class="tw-process-block uk-padding-large">
+                <div class="tw-process-circle uk-border-circle">
+                    <span class="tw-process-number">01</span>
+                    <h3 class="uk-text-uppercase">Idea</h3>
+                </div>
+                <p>We will ideate with you, help you come up with the concept and structure your online precence how it best benefits your business.</p>
+            </div>
+            <div class="tw-process-block uk-padding-large">
+                <div class="tw-process-circle uk-border-circle">
+                    <span class="tw-process-number">02</span>
+                    <h3 class="uk-text-uppercase">Planing</h3>
+                </div>
+                <p>We will plan out the work, the timeline and the stages. We help you break down even the most complex of projects to timelines and budgets that work for you.</p>
+            </div>
+            <div class="tw-process-block uk-padding-large">
+                <div class="tw-process-circle uk-border-circle">
+                    <span class="tw-process-number">03</span>
+                    <h3 class="uk-text-uppercase">Create</h3>
+                </div>
+                <p>We execute the plan and design meticulously.</p>
+            </div>
+            <div class="tw-process-block uk-padding-large">
+                <div class="tw-process-circle uk-border-circle">
+                    <span class="tw-process-number">04</span>
+                    <h3 class="uk-text-uppercase">Success</h3>
+                </div>
+                <p>Your online precense is a success. Which leaves you time to focus on what matters most, your business.</p>
+            </div>
+        </div>
+    </div>
+</section><section id="work" class="uk-section uk-padding-remove-bottom">
+    <div class="tw-element tw-heading uk-text-center">
+        <h3>
+            Selected Works
+        </h3>
+        <p class="subtitle">
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos mauris erat justo condimentum sit
+            amet augue.
+        </p>
+    </div>
+    <div class="tw-element tw-portfolio tw-isotope-container" data-isotope-item=".portfolio-item">
+        <div class="tw-portfolio-filter uk-text-center uk-text-uppercase">
+            <ul class="uk-list">
+                <li><span data-filter="*">Show All</span></li>
+                <li><span data-filter=".category-web-design">Web Design</span></li>
+                <li><span data-filter=".category-branding">Branding</span></li>
+                <li><span data-filter=".category-print">Print</span></li>
+                <li><span data-filter=".category-photography">Photography</span></li>
+            </ul>
+        </div>
+        <div class="isotope-container uk-grid-collapse with-bg tw-calc-width uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-2@m uk-child-width-1-3@l" data-uk-grid data-uk-scrollspy="target: > .portfolio-item; cls:uk-animation-slide-bottom-medium; delay: 400;">
+
+            <div id="messages"></div>
+
+            <div class="grid-sizer uk-grid-margin"></div>
+
+        </div>
+    </div>
+</section>
+<!-- <section id="blog" class="uk-section uk-background-muted">
+    <div class="uk-container">
+        
+        <div class="tw-element tw-heading uk-text-center">
+            <h3>Latest News</h3>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos mauris erat justo condimentum sit amet augue.</p>
+        </div>
+        
+        <div class="tw-element tw-carousel-post tw-posts">
+            <div class="owl-carousel owl-theme" data-uk-scrollspy="target:.post-item; cls:uk-animation-slide-bottom-medium; delay: 350;">
+        
+                <div class="post-item">
+                    <div class="entry-media data-uk-lightbox">
+                        <a href="assets/demo/post-carousel/post-1.jpg" class="tw-image-hover" title="Closeup of the woman's hand wearing beautiful rings">
+                            <img src="assets/demo/post-carousel/post-1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="tw-meta">Lifestyle</div>
+                        <h3 class="post-title"><a href="#">Closeup of the woman's hand wearing beautiful rings</a></h3>
+                        <div class="tw-meta"><a href="#">January 24, 2017</a></div>
+                    </div>
+                </div>
+                
+                <div class="post-item">
+                    <div class="entry-media data-uk-lightbox">
+                        <a href="assets/demo/post-carousel/post-2.jpg" class="tw-image-hover" title="Woman taking a photo of cup of coffee with Apple iPhone 6">
+                            <img src="assets/demo/post-carousel/post-2.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="tw-meta">Travel</div>
+                        <h3 class="post-title"><a href="#">Woman taking a photo of cup of coffee with Apple iPhone 6</a></h3>
+                        <div class="tw-meta"><a href="#">January 24, 2017</a></div>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <div class="entry-media data-uk-lightbox">
+                        <a href="assets/demo/post-carousel/post-3.jpg" class="tw-image-hover" title="Young woman relaxing at home and reading a book">
+                            <img src="assets/demo/post-carousel/post-3.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="tw-meta">Music</div>
+                        <h3 class="post-title"><a href="#">Young woman relaxing at home and reading a book</a></h3>
+                        <div class="tw-meta"><a href="#">January 24, 2017</a></div>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <div class="entry-media data-uk-lightbox">
+                        <a href="assets/demo/post-carousel/post-1.jpg" class="tw-image-hover" title="Axiom Essential Watch auctor ornare odio sed non">
+                            <img src="assets/demo/post-carousel/post-1.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="tw-meta">Branding</div>
+                        <h3 class="post-title"><a href="#">Axiom Essential Watch auctor ornare odio sed non</a></h3>
+                        <div class="tw-meta"><a href="#">January 24, 2017</a></div>
+                    </div>
+                </div>
+
+                <div class="post-item">
+                    <div class="entry-media" data-uk-lightbox>
+                        <a href="assets/demo/post-carousel/post-2.jpg" class="tw-image-hover" title="Alud. Winter Magazine Cover amet nibh vulputate cursus">
+                            <img src="assets/demo/post-carousel/post-2.jpg" alt="" />
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="tw-meta"><a href="#">Print</a></div>
+                        <h3 class="post-title"><a href="#">Alud. Winter Magazine Cover amet nibh vulputate cursus</a></h3>
+                        <div class="tw-meta"><a href="#">January 24, 2017</a></div>
+                    </div>
+                </div>
+        
+            </div>            
+        </div>
+        
+        <div class="uk-text-center">
+            <div style="height: 100px;"></div>
+            <a class="uk-button uk-button-radius uk-button-silver uk-button-default uk-button-small tw-hover"><span class="tw-hover-inner"><span>All News</span><i class="ion-ios-arrow-thin-right"></i></span></a>
+        </div>
+        
+    </div>
+</section> -->
+<section id="contact" class="uk-section">
+    <div class="uk-container">
+
+        <div class="tw-element tw-heading uk-text-center">
+            <h3>Contact us</h3>
+            <p>We design and develop services for customers of all sizes, specializing in creating stylish, modern websites,
+                web services and online stores.
+            </p>
+        </div>
+
+        <div class="tw-element uk-child-width-1-1 uk-child-width-expand@s uk-grid-large" data-uk-grid data-uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 300;">
+            <div>
+                <div class="tw-element tw-box uk-text-center uk-padding custom-typography">
+                    <i class="et-map-pin uk-border-circle layout-2"></i>
+                    <h4 class="uk-text-uppercase">
+                        Location
+                    </h4>
+                    <p class="description uk-margin-small-top">
+                        Shalom Guest House, Nairobi Kenya. 
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="tw-element tw-box uk-text-center uk-padding custom-typography">
+                    <i class="et-phone uk-border-circle layout-2"></i>
+                    <h4 class="uk-text-uppercase">
+                        Call Us
+                    </h4>
+                    <p class="description uk-margin-small-top">
+                        +254 112-074-588
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="tw-element tw-box uk-text-center uk-padding custom-typography">
+                    <i class="et-envelope uk-border-circle layout-2"></i>
+                    <h4 class="uk-text-uppercase">
+                        Email Us
+                    </h4>
+                    <p class="description uk-margin-small-top">
+                        info@websitedeveloperskenya.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="uk-section uk-padding-remove" style="background-color: #f7f7f7">
+    <div class="uk-grid-collapse uk-child-width-1-1 uk-child-width-1-2@l uk-grid-match" data-uk-grid>
+
+        <div uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 300" style="min-height: 400px;">
+            <div id="map2" style="width: 100%; height: 100%;"></div>
+        </div>
+
+        <div uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-small; delay: 300" style="min-height: 400px; padding:20px">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+            <script>
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "21497022",
+                formId: "231ee8e3-98d3-473a-aa9f-0fa4329b5130"
+            });
+            </script>
+            </div>
+    </div>
+
+</section>
+
+<footer class="uk-section uk-section-secondary uk-padding-remove-vertical uk-light">
+<div class="uk-container uk-container-expand">
+    <div class="footer-area">
+        <div class="uk-flex uk-flex-middle uk-child-width-1-1 uk-child-width-expand@m uk-grid-collapse" data-uk-grid data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 200;">
+            <div>
+                <div class="copyright">
+                    © Copyright 2017 - All Rights Reserved
+                </div>
+            </div>
+            <div>
+                <div class="uk-text-center">
+                    <div class="tw-socials">
+                        <a href="#"><i class="ion-social-facebook"></i></a>
+                        <a href="#"><i class="ion-social-instagram"></i></a>
+                        <a href="#"><i class="ion-social-pinterest"></i></a>
+                        <a href="#"><i class="ion-social-twitter"></i></a>
+                        <a href="#"><i class="ion-social-youtube"></i></a>
+                        <a href="#"><i class="ion-social-rss"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-text-right">
+                    <a href="" data-uk-scroll>Back To Top &nbsp;&nbsp;<i class="ion-ios-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</footer></div>
+<!-- .main-container close -->        
+	<script src="assets/js/jquery-3.2.0.min.js"></script>
+
+        <script src="assets/js/uikit.min.js"></script>
+        <script src="assets/js/uikit-icons.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <!-- 
+            You need to include this script tag on any page that has a Google Map.
+
+            The following script tag will work when opening this example locally on your computer.
+            But if you use this on a localhost server or a live website you will need to include an API key. 
+            Sign up for one here (it's free for small usage): 
+                https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+
+            After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.
+        -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZQiiFTOGpm2qHVZmZY1s-aEnmHDhqKgk"></script>
+
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                "use strict";
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+                    scrollwheel: false,
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]}, {"featureType": "landscape", "elementType": "geometry", "stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]}, {"featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{"color": "#ffffff"}, {"lightness": 17}]}, {"featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]}, {"featureType": "road.arterial", "elementType": "geometry", "stylers": [{"color": "#ffffff"}, {"lightness": 18}]}, {"featureType": "road.local", "elementType": "geometry", "stylers": [{"color": "#ffffff"}, {"lightness": 16}]}, {"featureType": "poi", "elementType": "geometry", "stylers": [{"color": "#f5f5f5"}, {"lightness": 21}]}, {"featureType": "poi.park", "elementType": "geometry", "stylers": [{"color": "#dedede"}, {"lightness": 21}]}, {"elementType": "labels.text.stroke", "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]}, {"elementType": "labels.text.fill", "stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]}, {"elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {"featureType": "transit", "elementType": "geometry", "stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]}, {"featureType": "administrative", "elementType": "geometry.fill", "stylers": [{"color": "#fefefe"}, {"lightness": 20}]}, {"featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                "use strict";
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+                    scrollwheel: false,
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.6700, -73.9400), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]}, {"featureType": "landscape", "elementType": "geometry", "stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]}, {"featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{"color": "#ffffff"}, {"lightness": 17}]}, {"featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]}, {"featureType": "road.arterial", "elementType": "geometry", "stylers": [{"color": "#ffffff"}, {"lightness": 18}]}, {"featureType": "road.local", "elementType": "geometry", "stylers": [{"color": "#ffffff"}, {"lightness": 16}]}, {"featureType": "poi", "elementType": "geometry", "stylers": [{"color": "#f5f5f5"}, {"lightness": 21}]}, {"featureType": "poi.park", "elementType": "geometry", "stylers": [{"color": "#dedede"}, {"lightness": 21}]}, {"elementType": "labels.text.stroke", "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]}, {"elementType": "labels.text.fill", "stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]}, {"elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {"featureType": "transit", "elementType": "geometry", "stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]}, {"featureType": "administrative", "elementType": "geometry.fill", "stylers": [{"color": "#fefefe"}, {"lightness": 20}]}, {"featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map2');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+
+        <script>
+            var socket = io()
+            $(() => {
+                $("#send").click(()=>{
+                    var message = { name: $("#name").val(), message: $("#message").val()}
+                    postMessage(message)
+                })
+                getMessages()
+            })
+        
+            socket.on('message', addMessage)
+        
+            function addMessage(message){
+                // $("#messages").append(`<h4> ${message.name} </h4> <p> ${message.message} </p>`)
+
+                $("#messages").append(`
+                <div class="portfolio-item category-${message.category}">
+                    <div class="portfolio-media tw-image-hover">
+                        <img src="assets/images/portfolio/${message.image}.jpg" alt="${message.name}" />
+                        <a href="#" class="portfolio-content uk-light">
+                            <h3 class="portfolio-title"><span>${message.name}</span></h3>
+                            <div class="tw-meta"><span>${message.category}</span></div>
+                        </a>
+                    </div>
+                </div>
+        `)
+            }
+        
+            function getMessages() {
+                $.get('http://localhost:3000/messages', (data) => {
+                    data.forEach(addMessage);
+                })
+            }
+        
+            // function postMessage(message) {
+            //     $.post('http://localhost:3000/messages', message)
+            // }
+        </script>
+    </body>
+</html>

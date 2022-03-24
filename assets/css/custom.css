@@ -1,0 +1,16 @@
+.site-name img {
+    max-width: 200px;
+}
+
+.tw-header.uk-sticky.uk-active.uk-light {
+    background: #ffffff;
+    color: #000;
+}
+
+.header-container.tw-header.tw-header-transparent.uk-light.tw-header-bottom.uk-sticky a {
+    color: white;
+}
+
+.header-container.tw-header.tw-header-transparent.uk-light.tw-header-bottom.uk-sticky.uk-active.uk-sticky-fixed.uk-sticky-below a {
+    color: black;
+}
